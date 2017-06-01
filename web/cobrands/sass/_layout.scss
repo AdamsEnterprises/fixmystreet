@@ -134,9 +134,8 @@ h1 {
 
 // The narrow single column box
 .content {
-  width: 27em;
-  margin: 1em 0.5em 0 0.5em;
-  padding: 1em 1em 3em;
+  margin: 1em 0.5em 0;
+  padding: 1em;
   background: #fff;
   color: #222;
 }
@@ -157,7 +156,6 @@ body.mappage {
   }
 
   .content {
-    width: auto;
     padding: 0;
     margin: 0;
   }
@@ -385,20 +383,10 @@ body.mappage.admin {
   }
 }
 
-
-// full width page
-body.fullwidthpage {
-  .content {
-    width: auto;
-  }
-}
-
 body.twothirdswidthpage,
 body.fullwidthpage {
     .container {
         .content {
-            padding: 1em;
-            margin-bottom: 0em;
             footer {
                 margin-top: 0em;
                 margin-bottom: -1em;
@@ -494,10 +482,9 @@ body.twothirdswidthpage {
 // but keep them narrow to match the report sidebar
 body.authpage {
   .content {
+    width: 27em;
     margin-#{$left}: auto;
     margin-#{$right}: auto;
-    margin-bottom: 0;
-    padding: 1em; // same as .twothirdswidthpage .content
   }
 }
 
@@ -514,7 +501,6 @@ body.authpage {
     width:50%;
   }
   .full-width {
-    width:auto;
     margin:0;
   }
 }
